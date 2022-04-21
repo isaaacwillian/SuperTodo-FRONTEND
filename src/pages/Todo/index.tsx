@@ -105,11 +105,26 @@ function Todo() {
     return e?.parentElement?.previousSibling;
   };
 
-  const handleEditClick = (e: FormEvent) => {
+  const handleEditClick = async (e: FormEvent) => {
     const span = findSpanElement(e.target as HTMLElement) as HTMLElement;
+    if (span.classList.contains("updatingTodo")) {
+      try {
+        await api.put(
+          "data/update",
+          { todoId: span.id, newTodo: span.innerText },
+          { withCredentials: true }
+        );
+        span.removeAttribute("contenteditable");
+        span.classList.remove("updatingTodo");
+      } catch (error) {
+        notify();
+      }
+      return null;
+    }
     span.setAttribute("contenteditable", "true");
     span.classList.add("updatingTodo");
     span.focus();
+    return null;
   };
 
   const removeTodo = async (e: FormEvent) => {
