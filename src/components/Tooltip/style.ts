@@ -5,6 +5,7 @@ export const Container = styled.div`
   height: 50%;
   right: 0;
   span {
+    position: absolute;
     visibility: hidden;
     background: #fc5454;
     color: white;
