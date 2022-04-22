@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  position: relative;
+  position: absolute;
   height: 50%;
+  right: 0;
   span {
-    position: absolute;
     visibility: hidden;
     background: #fc5454;
     color: white;

@@ -9,6 +9,7 @@ export const Container = styled.div<testProps>`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  position: relative;
   width: 100%;
   background-color: ${(props) => props.theme.colors.inputBackground};
   height: 35px;
@@ -38,7 +39,15 @@ export const Container = styled.div<testProps>`
 
   svg {
     transition: all 0.5s;
-    color: ${(props) => (props.isFocused ? "#fcad00" : props.theme.colors.inputPlaceholder)};
+    color: ${(props) => {
+      if (props.isFocused) {
+        return "#fcad00";
+      }
+      if (props.hasError) {
+        return "#fc5454";
+      }
+      return props.theme.colors.inputPlaceholder;
+    }};
     width: 40px;
   }
 `;

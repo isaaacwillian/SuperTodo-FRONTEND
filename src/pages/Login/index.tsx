@@ -38,7 +38,6 @@ function Login() {
 
       return navigate("/");
     } catch (error) {
-      console.log(error);
       if (error instanceof yup.ValidationError) {
         const errors = getValidationsErrors(error);
         return formRef.current?.setErrors(errors);
