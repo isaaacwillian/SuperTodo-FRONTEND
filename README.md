@@ -1,12 +1,14 @@
 <h1 align="center">Super To-Do</h1>
 
 <div align="center" >
-  <img src="../github/readme.gif" alt="super todo" height="425">
+  <img src="./github/readme1.gif" alt="demo-web" height="425">
+  <img src="./github/readme2.gif" alt="demo-web" height="425">
+  <img src="./github/readme3.gif" alt="demo-mobile" height="425">
 </div>
 
 ## Tecnologias
 
-Esse projeto está sendo desenvolvido com as seguintes tecnologias:
+Esse projeto foi desenvolvido com as seguintes tecnologias::
 
 ✔️Typescript
 
