@@ -1,9 +1,9 @@
 <h1 align="center">Super To-Do</h1>
 
 <div align="center" >
-  <img src="./github/readme1.gif" alt="demo-web" height="425">
-  <img src="./github/readme2.gif" alt="demo-web" height="425">
-  <img src="./github/readme3.gif" alt="demo-mobile" height="425">
+  <img src="./github/readme1.gif" alt="demo-web" height="400">
+  <img src="./github/readme2.gif" alt="demo-web" height="400">
+  <img src="./github/readme3.gif" alt="demo-mobile" height="400">
 </div>
 
 ## Tecnologias
